@@ -67,7 +67,7 @@
 
 	<section id="projects" class="flex flex-col gap-24 py-20 lg:py-32">
 		<div class="flex flex-col gap-2 text-center">
-			<h6 class="text-lg sm:text-xl md:text-2xl">A selection of projects I've built</h6>
+			<h6 class="text-lg sm:text-xl md:text-2xl">A selection of projects I've worked on</h6>
 			<h3 class="text-3xl font-semibold sm:text-4xl md:text-5xl">
 				Want a <span class="poppins text-violet-400">closer look</span>?
 			</h3>
