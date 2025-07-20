@@ -9,19 +9,20 @@
 >
 	<div>
 		<div class="mb-4 flex items-center">
-			<img alt="App Icon" class="mr-4 h-10 w-10 rounded-lg" src={step.icon} />
+			<img alt="App Icon" class="mr-4 h-10 w-10 rounded-lg object-cover" src={step.icon} />
 			<div class="flex-grow">
 				<h2 class="text-xl font-bold">{step.name}</h2>
 				<span
-					class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800"
+					class={'inline-flex items-center rounded-full  px-2.5 py-0.5 text-xs font-medium text-gray-800 ' +
+						(step.active ? 'bg-green-500 text-black' : 'bg-gray-100 text-gray-800')}
 				>
-					{step.status}
+					{step.active ? 'Aktiv' : 'Pausiert'}
 				</span>
 			</div>
 		</div>
-		<p class="mb-4">
+		<div class="mb-4">
 			<slot />
-		</p>
+		</div>
 	</div>
 
 	<div

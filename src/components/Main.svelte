@@ -3,10 +3,16 @@
 
 	let steps = [
 		{
+			name: 'Developer Portfolio',
+			icon: 'images/portfolio-icon.png',
+			href: 'https://github.com/nJoyJoshua/portfolio',
+			active: true,
+		},
+		{
 			name: 'Snack Map',
 			icon: 'images/snackmap-icon.png',
 			href: 'https://github.com/tobkel/snackmap',
-			status: 'Pausiert',
+			active: false,
 		},
 	];
 
@@ -74,6 +80,16 @@
 		</div>
 		<div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-10">
 			<Step step={steps[0]}>
+				<p>
+					This portfolio was built using <span class="text-violet-400">SvelteKit</span> to showcase
+					my
+					<span class="text-violet-400">projects, skills, and experience</span> as a developer.
+					While building it, I deepened my understanding of modern frontend development and static
+					site deployment with
+					<span class="text-violet-400">Netlify</span>.
+				</p>
+			</Step>
+			<Step step={steps[1]}>
 				<p>
 					SnackMap is a mobile app that <span class="text-violet-400"
 						>connects vending machine providers with users</span
